@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>length converter from cm to m,km,f,in</title>
+</head>
+<style type="text/css">h1{ color:white;text-align:center}
+input:focus {
+    background: black;
+       color: white;</style>
+<style type="text/css">h2{text-align:center}</style>
+<body bgcolor="cyan"><h1>Length converter </h1><br><br>
+<form name="myform">
+<b>ENTER YOUR VALUE  :<h2> <input type="number" name="a" placeholder="   ............in centimeter.........."><br>
+  <input type="button"value="convert to inches " onclick="centimetrestoinches()"><br>
+  <input type="button"value="Converts to feets " onclick="centimetrestofeets()"><br>
+  <input type="button"value="Converts to meters " onclick="centimetrestometer()"><br>
+ <input type="button"value="Converts to kilometres" onclick="centimetrestokilometer()"><br>
+  <input type="number" name="result" placeholder="__________________________________________"></b></h2>
+</form>
+<script type="text/javascript">
+  function centimetrestoinches()
+  {
+   b =parseInt(myform.a.value);
+   result=0.394*b;
+   myform.result.value=result;
+  }
+  function centimetrestofeets()
+  {
+  b =parseInt(myform.a.value);
+  result= 0.0328084*b;
+  myform.result.value=result;
+  }
+  function centimetrestometer()
+  {
+  b =parseInt(myform.a.value);
+  result= 0.01*b;
+  myform.result.value=result;
+  }
+function centimetrestokilometer()
+  {
+  b =parseInt(myform.a.value);
+  result= 0.00001*b;
+  myform.result.value=result;
+  }
+</script>
+<br>
+<br>
+
+</body>
+</html>
