@@ -2,23 +2,36 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <title>length converter from cm to m,km,f,in</title>
 </head>
 <style type="text/css">h1{ color:white;text-align:center}
+h2{ color:white;text-align:center}
+h3{ color:white;text-align:center}
+
+body {
+      font-family: 'Poppins';font-size: 22px;
+  }
 input:focus {
     background: black;
        color: white;</style>
-<style type="text/css">h2{text-align:center}</style>
+<style type="text/css">h2{text-align:center}
+
+
+</style>
+
 <body style="background-image: url(https://ak.picdn.net/shutterstock/videos/1052869340/thumb/1.jpg
-); background-size: 500% ; no-repeat">
-<h1>Length converter </h1><br><br><br><br><br>
+); background-size: 350% ; no-repeat">
+<br><br><br>
+<h1>Length converter </h1><br><br><br>
+ 
 <form name="myform">
-<b>ENTER YOUR VALUE  :<h2> <input type="number" name="a" placeholder="   ............in centimeter.........."><br>
+<h2>ENTER YOUR VALUE  :</h2> <br> <h3><input type="number" name="a" placeholder="   ............in centimeter.........."><br>
   <input type="button"value="convert to inches " onclick="centimetrestoinches()"><br>
   <input type="button"value="Converts to feets " onclick="centimetrestofeets()"><br>
   <input type="button"value="Converts to meters " onclick="centimetrestometer()"><br>
  <input type="button"value="Converts to kilometres" onclick="centimetrestokilometer()"><br>
-  <input type="number" name="result" placeholder="__________________________________________"></b></h2>
+  <input type="number" name="result" placeholder="__________________________________________"></b></h3>
 </form>
 <script type="text/javascript">
   function centimetrestoinches()
